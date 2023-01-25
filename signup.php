@@ -1,5 +1,5 @@
 <?php
-include_once 'header.php';
+// include_once 'header-signin.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,9 +27,6 @@ include_once 'header.php';
 			        <p>Password*</p>
           	        <input type="password" name="pwd" placeholder="Password..." />
                     <input type="password" name="pwdrepeat" placeholder="Repeat password...">
-                    <div>
-
-                    </div>
                     <button type="submit" name="submit">Sign up</button>
                     <span style="color: red;"><?php
                         if (isset($_GET['error'])) {

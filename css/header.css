@@ -1,3 +1,8 @@
+* {
+	list-style: none;
+	text-decoration: none;
+}
+
 /* Header */
 .header {
 	height: 80px;
@@ -6,22 +11,31 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
 .logo {
 	font-size: 24px;
 	font-weight: 600;
 	align-items: center;
 }
+
 .nav-link ul {
 	display: flex;
 	align-items: center;
 }
+
 .nav-link ul li {
 	padding: 15px;
 }
+
 .nav-link ul li a {
 	color: #333333;
 	font-size: 16px;
 }
+
+.nav-link ul li a:hover {
+	color: #4252f0;
+}
+
 .nav-link ul .sign-in {
 	color: white;
 	padding: 8px 30px;
@@ -29,6 +43,7 @@
 	background-color: #4252f0;
 	border-radius: 5px;
 }
+
 .nav-link ul .sign-in a {
 	color: white;
 }

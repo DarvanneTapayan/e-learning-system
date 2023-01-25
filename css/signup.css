@@ -63,6 +63,17 @@
 	outline-color: #4252f0;
 }
 
+.sign-up-place button {
+	border: 1px solid #ced4da;
+	/* border-radius: 20px; note:only if you want smooth border */
+	padding: 13px;
+	margin: 5px 0 5px 0;
+	outline-color: #4252f0;
+	background-color: #4252f0;
+	width: 104%;
+	color: white;
+}
+
 .sign-up-form p {
 	font-size: var(--small-text);
 }

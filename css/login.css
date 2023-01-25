@@ -1,12 +1,11 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
 }
 :root {
 	--main-color: #090528;
 	--light-blue: #4252f0;
-	--title-color: #012970;
+	--title-color: #525b6a;
 	--text-color: #333333;
 	--small-text: 14px;
 	--description: 16px;
