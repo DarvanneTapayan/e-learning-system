@@ -1,14 +1,4 @@
 <?php
-session_start();
-
-if(!isset($_SESSION['loggedin']))
-{
-    Header('Location: index.php');
-}
-
-?>
-
-<?php
 include_once 'header.php';
 ?>
 
@@ -82,10 +72,6 @@ include_once 'header.php';
 				>
 			</div>
 		</section>
-		<h1>Welcome!<?= $_SESSION['username']; ?></h1>
-		<a href="./log-out.php">Logout</a>
-	</body>
-</html>
 
 <?php
 include_once 'footer.php';

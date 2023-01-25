@@ -1,5 +1,6 @@
 <?php
-    function emptyInputSignup($name, $email, $username, $pwd, $pwdrepeat) {
+
+function emptyInputSignup($name, $email, $username, $pwd, $pwdrepeat) {
         $result;
         if (empty($name) || empty($email) || empty($username) || empty($pwd) || empty($pwdrepeat)) {
             $result = true;
@@ -12,7 +13,7 @@
 
     function invalidUid($username) {
         $result;
-        if (!preg_match("/^[a-zA-Z0-9]*$/"), $username) {
+        if (!preg_match("/^[a-zA-Z0-9]*$/", $username)) {
             $result = true;
         }
         else {
@@ -34,7 +35,7 @@
 
     function pwdMatch($pwd, $pwdRepeat) {
         $result;
-        if ($PWD !== $pwdRepeat) {
+        if ($pwd !== $pwdRepeat) {
             $result = true;
         }
         else {
@@ -48,7 +49,7 @@
         $sql = "SELECT * FROM users WHERE usersUid = ? OR usersEmail = ?;";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("location: ../sign-up.php?error=stmtfailed");
+            header("location: ../signup.php?error=stmtfailed");
             exit();
         }
 
@@ -72,7 +73,7 @@
         $sql = "INSERT INTO users (usersName, usersEmail, usersUid, usersPwd) VALUES (?, ?, ?, ?);";
         $stmt = mysqli_stmt_init($conn);
         if (!mysqli_stmt_prepare($stmt, $sql)) {
-            header("location: ../sign-up.php?error=stmtfailed");
+            header("location: ../signup.php?error=stmtfailed");
             exit();
         }
 
@@ -81,7 +82,7 @@
         mysqli_stmt_bind_param($stmt, "ssss", $username, $email, $username, $pwd, $hashedPwd);
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
-        header("location: ../sign-up.php?error=none");
+        header("location: ../signup.php?error=none");
         exit();
 
     }

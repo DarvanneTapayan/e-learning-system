@@ -1,7 +1,3 @@
-<?php
-// include_once 'header.php';
-?>
-
 <!-- <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -72,11 +68,3 @@
 		</section>
 	</body>
 </html> -->
-
-<?php
-// include_once 'footer.php';
-?>
-
-
-<?php
-Header('Location: log-in.php');
