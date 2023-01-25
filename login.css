@@ -12,14 +12,14 @@
 	--description: 16px;
 }
 
-.log-in-section {
+.login-section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	height: 800px;
 }
 
-.log-in-form {
+.login-form {
 	width: auto;
 	height: auto;
 }
@@ -29,13 +29,13 @@
 	color: var(--light-blue);
 }
 
-.log-in-form p {
+.login-form p {
 	font-size: var(--description);
 	margin-top: 10px;
 	font-weight: 500;
 }
 
-.log-in-form button {
+.login-form button {
 	font-size: var(--small-text);
 	padding: 10px 5%;
 	border: 1px solid #ced4da;
@@ -43,18 +43,18 @@
 	margin-top: 20px;
 }
 
-.log-in-place {
+.login-place {
 	margin: 20px 0;
 }
 
-.log-in-place p {
+.login-place p {
 	font-size: 14px;
 	font-weight: 500;
 	margin-top: 20px;
 	padding-bottom: 8px;
 }
 
-.log-in-place input {
+.login-place input {
 	border: 1px solid #ced4da;
 	/* border-radius: 20px; note:only if you want smooth border */
 	padding: 13px;
@@ -64,7 +64,7 @@
 	outline-color: #4252f0;
 }
 
-.log-in-form p {
+.login-form p {
 	font-size: var(--small-text);
 }
 
@@ -74,20 +74,20 @@
 	text-decoration: none;
 }
 
-.log-in-button {
+.login-button {
 	background-color: var(--light-blue);
 	color: white;
 	margin: 20px 0;
 }
 
-.log-in-two {
+.login-two {
 	display: flex;
 	justify-content: space-between;
 	gap: 1rem;
 	margin-top: 5px 0;
 }
 
-.log-in-two p {
+.login-two p {
 	font-size: var(--small-text);
 	font-weight: 500;
 }

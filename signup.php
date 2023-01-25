@@ -1,5 +1,5 @@
 <?php
-	include_once 'header.php'
+	include_once 'header-login.php'
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@
 </head>
 <body>
 <section class="sign-up-section">
-    <form action="php_includes/signup.inc.php" method="POST">
+    <form action="includes/signup.inc.php" method="POST">
 	  	<div class="sign-up-form">
 		  	<h1>Sign-up</h1>
 			  <p class="des">To get started you need to create an account first, but if you
@@ -26,7 +26,7 @@
 			<p>Password*</p>
           	<input type="password" name="pwd" placeholder="Password" />
           	<input type="submit" name="submit" value="Sign Up" class="sign-up-button" />
-			<p class="not-registered-yet">Already have an account?</p> <a href="log-in.php">Log-in account</a>
+			<p class="not-registered-yet">Already have an account?</p> <a href="login.php">Log in account</a>
     	</div>
     <?php
 

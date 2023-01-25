@@ -28,9 +28,6 @@ session_start();
             </div>
         </form>
     </div>
-
-
-
 </body>
 
 </html>

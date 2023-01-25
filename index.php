@@ -1,3 +1,6 @@
+<?php
+	include_once 'header-logout.php'
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,3 +13,7 @@
 yawa
 </body>
 </html>
+
+<?php
+include_once 'content.php';
+?>

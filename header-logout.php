@@ -34,7 +34,7 @@
 						<a href="#">Contact</a>
 					</li>
 					<li class="sign-in">
-						<a href="sign-up.php">Get Started</a>
+						<a href="login.php">Log out</a>
 					</li>
 				</ul>
 			</nav>
