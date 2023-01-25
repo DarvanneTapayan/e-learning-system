@@ -1,0 +1,77 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+}
+:root {
+	--main-color: #090528;
+	--light-blue: #4252f0;
+	--title-color: #012970;
+	--text-color: #333333;
+	--small-text: 14px;
+	--description: 16px;
+}
+body {
+	padding-bottom: 200px;
+}
+
+/* introduction */
+.introduction {
+	padding: 0 8%;
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+.intro-text {
+	padding: 0 6%;
+	width: 100%;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.intro-text h1 {
+	color: var(--title-color);
+	font-size: 32px;
+	letter-spacing: 1px;
+	margin-bottom: 18px;
+}
+.intro-text p {
+	font: 16px;
+	color: var(--text-color);
+	margin-bottom: 18px;
+}
+.intro-text span {
+	color: white;
+	width: 90px;
+	padding: 8px 30px;
+	background-color: #4252f0;
+	border-radius: 3px;
+}
+.hero-banner-img img {
+	width: 100%;
+	max-width: 500px;
+}
+/* who are we section */
+.who-are-we {
+	padding: 0 8%;
+	margin-top: 180px;
+	display: flex;
+	justify-content: center;
+}
+.hero-banner-2 {
+	padding: 0 10% 0 0;
+}
+.hero-banner-2 img {
+	width: 100%;
+	max-width: 450px;
+}
+.who-are-we-text {
+	padding: 0 0 0 10%;
+	width: 400px;
+}
+.who-are-we-text p {
+	font-size: 14px;
+}
