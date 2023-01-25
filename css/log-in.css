@@ -1,0 +1,97 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+:root {
+	--main-color: #090528;
+	--light-blue: #4252f0;
+	--title-color: #012970;
+	--text-color: #333333;
+	--small-text: 14px;
+	--description: 16px;
+}
+
+.log-in-section {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 800px;
+}
+
+.log-in-form {
+	width: auto;
+	height: auto;
+}
+
+.des {
+	font-size: var(--description);
+	color: var(--light-blue);
+}
+
+.log-in-form p {
+	font-size: var(--description);
+	margin-top: 10px;
+	font-weight: 500;
+}
+
+.log-in-form button {
+	font-size: var(--small-text);
+	padding: 10px 5%;
+	border: 1px solid #ced4da;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.log-in-place {
+	margin: 20px 0;
+}
+
+.log-in-place p {
+	font-size: 14px;
+	font-weight: 500;
+	margin-top: 20px;
+	padding-bottom: 8px;
+}
+
+.log-in-place input {
+	border: 1px solid #ced4da;
+	/* border-radius: 20px; note:only if you want smooth border */
+	padding: 13px;
+	padding-left: 5%;
+	margin: 5px 0 5px 0;
+	width: 93%;
+	outline-color: #4252f0;
+}
+
+.log-in-form p {
+	font-size: var(--small-text);
+}
+
+.not-registered-yet a {
+	font-size: var(--small-text);
+	color: var(--light-blue);
+	text-decoration: none;
+}
+
+.log-in-button {
+	background-color: var(--light-blue);
+	color: white;
+	margin: 20px 0;
+}
+
+.log-in-two {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 5px 0;
+}
+
+.log-in-two p {
+	font-size: var(--small-text);
+	font-weight: 500;
+}
+
+.password {
+	color: var(--light-blue);
+}
