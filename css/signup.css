@@ -35,13 +35,13 @@
 	font-weight: 500;
 }
 
-.sign-up-form button {
+/* .sign-up-form button {
 	font-size: var(--small-text);
 	padding: 10px 5%;
 	border: 1px solid #ced4da;
 	width: 100%;
 	margin-top: 20px;
-}
+} */
 
 .sign-up-place {
 	margin: 20px 0;
@@ -58,9 +58,8 @@
 	border: 1px solid #ced4da;
 	/* border-radius: 20px; note:only if you want smooth border */
 	padding: 13px;
-	padding-left: 5%;
 	margin: 5px 0 5px 0;
-	width: 93%;
+	width: 100%;
 	outline-color: #4252f0;
 }
 
@@ -72,26 +71,4 @@
 	font-size: var(--small-text);
 	color: var(--light-blue);
 	text-decoration: none;
-}
-
-.sign-up-button {
-	background-color: var(--light-blue);
-	color: white;
-	margin: 20px 0;
-}
-
-.sign-up-two {
-	display: flex;
-	justify-content: space-between;
-	gap: 1rem;
-	margin-top: 5px 0;
-}
-
-.sign-up-two p {
-	font-size: var(--small-text);
-	font-weight: 500;
-}
-
-.password {
-	color: var(--light-blue);
 }

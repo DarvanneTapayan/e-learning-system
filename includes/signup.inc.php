@@ -1,32 +1,43 @@
 <?php
-include_once 'dbh.inc.php';
 
-$first = mysqli_real_escape_string($conn, $_POST['first']);
-$last = mysqli_real_escape_string($conn, $_POST['last']);
-$email = mysqli_real_escape_string($conn, $_POST['email']);
-$uid = mysqli_real_escape_string($conn, $_POST['uid']);
-$pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
+if(isset($_POST['submit'])) {
 
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $username = $_POST['uid'];
+    $pwd = $_POST['pwd'];
+    $pwdRepeat = $_POST['pwdrepeat'];
 
+    require_once 'dbh.inc.php';
+    require_once 'functions.inc.php';
 
-if (empty($uid) || empty($pwd)) {
-    header("Location: ../register.php?error=emptyinput");
-    exit();
-} else {
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: ../register.php?error=invalidemail");
+    if(emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat)!== false) {
+        header("Location: ../signup.php?error=emptyinput");
         exit();
-    } else {
-        $sql = "INSERT INTO users (user_first, user_last, user_email, user_uid, user_pwd)
-    VALUES (?, ?, ?, ?, ?);";
-        $stmt = mysqli_stmt_init($conn);
-        if (!mysqli_stmt_prepare($stmt, $sql)) {
-            echo "Error";
-        } else {
-            mysqli_stmt_bind_param($stmt, "sssss", $first, $last, $email, $uid, $pwd,);
-            mysqli_stmt_execute($stmt);
-            header("Location: ../index.php?signup=success");
-            exit();
-        }
     }
+    if(invalidUid($username)!== false) {
+        header("Location: ../signup.php?error=invaliduid");
+        exit();
+    }
+    if(invalidEmail($email)!== false) {
+        header("Location: ../signup.php?error=invalidemail");
+        exit();
+    }
+    if(pwdMatch($pwd, $pwdRepeat)!== false) {
+        header("Location: ../signup.php?error=passwordsnotmatch");
+        exit();
+    }
+    if(uidExists($conn, $username, $email)!== false) {
+        header("Location: ../signup.php?error=usernametaken");
+        exit();
+    }
+
+    createUser($conn, $name, $email, $username, $pwd);
+
 }
+else {
+    header("Location: ../signup.php");
+    exit();
+}
+
+?>
