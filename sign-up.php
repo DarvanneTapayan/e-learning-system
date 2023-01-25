@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -45,7 +45,7 @@
 			</section>
 		</main>
 	</body>
-</html> -->
+</html>
 						<!-- <div class="sign-up-two">
 						<p>Remember me</p>
 						<p class="password">Forget password?</p>
