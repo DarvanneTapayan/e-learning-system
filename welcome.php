@@ -1,19 +1,31 @@
 <?php
-// include_once 'header.php';
+session_start();
+
+if(!isset($_SESSION['loggedin']))
+{
+    Header('Location: index.php');
+}
+
 ?>
 
-<!-- <!DOCTYPE html>
+<?php
+include_once 'header.php';
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="refresh" content="5;url=log-out.php" />
+		<!-- <meta http-equiv="refresh" content="5;url=log-out.php" /> -->
 		<link rel="stylesheet" href="css/styles.css" />
 		<title>Landing Page</title>
+		<title>Basic Auth</title>
 	</head>
 	<body>
-		<section class="introduction">
+
+	<section class="introduction">
 			<div class="intro-text">
 				<h1>E-learning Management System / Group-B</h1>
 				<p
@@ -70,13 +82,11 @@
 				>
 			</div>
 		</section>
+		<h1>Welcome!<?= $_SESSION['username']; ?></h1>
+		<a href="./log-out.php">Logout</a>
 	</body>
-</html> -->
+</html>
 
 <?php
-// include_once 'footer.php';
+include_once 'footer.php';
 ?>
-
-
-<?php
-Header('Location: log-in.php');

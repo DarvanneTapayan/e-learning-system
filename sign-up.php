@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -38,18 +38,15 @@
 								name="pwdrepeat"
 								placeholder="Confirm password..." />
 						</div>
+						<button type="submit" name="submit" class="sign-up-button">Sign up</button>
+						<p class="not-registered-yet">Already have an account? <a href="log-in.php">Log-in account</a></p>
+					</div>
+				</form>
+			</section>
+		</main>
+	</body>
+</html> -->
 						<!-- <div class="sign-up-two">
 						<p>Remember me</p>
 						<p class="password">Forget password?</p>
 					</div> -->
-						<button type="submit" name="submit" class="sign-up-button">Sign up</button>
-						<p class="not-registered-yet">Already have an account? <a href="#">Log-in account</a></p>
-					</div>
-				</form>
-				<!-- <div class="bckgrnd-img">
-					<img src="img/Group 12.png" alt="" />
-				</div> -->
-			</section>
-		</main>
-	</body>
-</html>
